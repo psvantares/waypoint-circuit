@@ -1,7 +1,4 @@
-# This .gitignore file should be placed at the root of your Unity project directory
-#
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
-#
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -9,6 +6,9 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
+/[Aa]ssetBundles/
+/[Uu]serSettings/
+/remote_config_data
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -42,6 +42,8 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+*.bk
+.DS_Store
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -58,3 +60,11 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# JetBrains Rider
+.idea/
+
+# Firebase
+Assets/Plugins/Android/Firebase/res/values/crashlytics_build_id.xml
+Assets/Plugins/Android/Firebase/res/values/crashlytics_build_id.xml.meta
+Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_build_id.xml
+Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_build_id.xml.meta
